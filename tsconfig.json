@@ -1,6 +1,12 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
+"extends": "expo/tsconfig.base",
+"compilerOptions": {
+"strict": true,
+"jsx": "react-jsx",
+"moduleResolution": "Bundler",
+"skipLibCheck": true,
+"types": ["react", "react-native"],
+"moduleSuffixes": [".native", ""],
+"typeRoots": ["./types", "./node_modules/@types"]
+}
 }
